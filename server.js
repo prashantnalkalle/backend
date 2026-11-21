@@ -207,7 +207,7 @@ app.get('/api/students',async(req,res) =>{
 
 app.get("/api/students/:id",async(req,res) =>{
     try{
-        let {id} = req.params.id
+        let {id} = req.params
 
         let student = await formModel.findOne({_id:id})
 
